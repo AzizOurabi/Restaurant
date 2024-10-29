@@ -1,0 +1,145 @@
+.color-body {
+  background-color: #F0F4F8; /* Généralement une légère nuances de blanc */;
+  height: 1000vh;
+}
+
+.font {
+  font-family: "Almarai", sans-serif;
+}
+
+.title {
+  color: #333333; /* Un gris foncé pour une bonne lisibilité */
+  font-family: Almarai;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 64px;
+}
+
+.underline {
+  height: 2px;
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid #007BFF; /* Nouvelle couleur principale */
+}
+
+.btn {
+  color: #007BFF; /* Couleur du texte du bouton principale */
+  font-family: Almarai;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.btn:hover {
+  color: white; /* Texte devient blanc au survol */
+  font-weight: bold;
+  background-color: #0056b3; /* Un bleu plus sombre pour l'état survolé */
+}
+
+.img-item {
+  height: 180px;
+  width: 252px !important;
+  border-radius: 5px;
+  border: 1px solid #e1e1e1; /* Pour un léger contour */
+}
+
+.item-description {
+  color: #7D7D7D; /* Gris plus doux pour le texte descriptif */
+  font-family: Almarai;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.item-title {
+  color: #555555;
+  font-family: Almarai;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.card-color {
+  background-color: #ffffff; /* Cartes blanches pour un look propre */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère pour la profondeur */
+}
+
+.item-price {
+  color: #0056b3; /* Une couleur d'accent, plus vive pour le prix */
+  font-family: Almarai;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.btn-search {
+  color: #007BFF;
+  border: 2px solid #007BFF;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.btn-search:hover {
+  color: white;
+  background-color: #007BFF; /* Changement de fond au survol */
+}
+
+.brand-color {
+  color: #007BFF; /* Couleur principale pour la marque */
+}
+
+.position-relative {
+  position: relative; /* Position de référence pour positionner suggestions */
+}
+/* styles.css */
+.card-spacing {
+  margin-bottom: 40px; /* ou le montant d'espace que vous préférez */
+}
+
+.suggestions {
+  position: absolute; /* Positionner absolument par rapport à son conteneur parent */
+  z-index: 1000; /* Au-dessus des autres éléments */
+  border: 1px solid #ccc; /* Bordure de la boîte des suggestions */
+  background-color: #ffffff; /* Pour les suggestions */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ombre pour un aspect surélevé */
+  width: calc(100% - 10px); /* Largeur égale au champ de saisie, ajustée pour les marges */
+  max-height: 200px; /* Limite de hauteur pour prévenir le débordement */
+  overflow-y: auto; /* Permet le défilement si trop de suggestions */
+  margin-top: 40px; /* Espacement entre le champ de saisie et les suggestions */
+}
+
+.suggestion-item {
+  cursor: pointer; /* Changer le curseur au survol */
+  padding: 10px; /* Espacement intérieur de chaque élément de suggestion */
+  transition: background-color 0.2s; /* Animations de survol */
+}
+
+.suggestion-item:hover,
+.suggestion-item.active {
+  background-color: #007BFF; /* Couleur d'arrière-plan pour l'élément sélectionné */
+  color: #fff; /* Couleur du texte pour l'élément actif */
+}
+.item-fade-enter {
+  opacity: 0;
+  transform: scale(0.9); /* Réduire légèrement la taille */
+}
+
+.item-fade-enter-active {
+  opacity: 1;
+  transform: scale(1); /* Retourne à la taille normale */
+  transition: opacity 500ms, transform 500ms; /* Durée d'animation */
+}
+
+.item-fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.item-fade-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 500ms, transform 500ms; /* Durée d'animation */
+}
